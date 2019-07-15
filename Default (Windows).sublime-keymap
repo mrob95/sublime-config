@@ -1,0 +1,52 @@
+[
+	{ "keys": ["cmd+alt+n"], "command": "new_snippet" },
+
+	{
+        "keys": ["ctrl+alt+shift+t"],
+        "command": "markdown_table_format",
+        "context": [
+             {"key": "selector", "operator": "equal", "operand": "text.html.markdown"}
+
+        ]
+    },
+    {"keys": ["ctrl+alt+v"], "command": "clone_file"},
+    {"keys": ["ctrl+alt+n"], "command": "new_window"},
+    {"keys": ["ctrl+shift+o"], "command": "prompt_add_folder"},
+    {"keys": ["ctrl+k", "ctrl+t"], "command": "title_case"},
+    {"keys": ["ctrl+alt+p"], "command": "expand_selection_to_paragraph"},
+
+    { "keys": ["shift+down"], "command": "expand_selection", "args": {"to": "line"} },
+
+
+    { "keys": ["ctrl+up"], "command": "select_lines", "args": {"forward": false} },
+    { "keys": ["ctrl+down"], "command": "select_lines", "args": {"forward": true} },
+    { "keys": ["shift+tab"], "command": "unindent" },
+    // { "keys": ["ctrl+0"], "command": "reset_font_size" },
+    {"keys": ["ctrl+alt+enter"], "command": "send_code"},
+    { "keys": ["end"], "command": "move_to", "args": {"to": "hardeol", "extend": false} },
+// Fix Beginning of line
+    // { "keys": ["home"], "command": "move_to", "args": {"to": "hardbol", "extend": false} },
+// Fix end of line + select
+    { "keys": ["shift+end"], "command": "move_to", "args": {"to": "hardeol", "extend": true} },
+    // Fix beginning of line + select
+    { "keys": ["shift+home"], "command": "move_to", "args": {"to": "hardbol", "extend": true} },
+    {
+        "keys": ["ctrl+alt+r"], "command": "terminus_open", "args": {
+            "config_name": "R",
+            "cwd": "${file_path:${folder}}"
+        }
+    },
+    {
+    "keys": ["ctrl+w"], "command": "terminus_close", "context": [{ "key": "terminus_view"}]
+    },
+    {
+        "keys": ["ctrl+alt+shift+r"], "command": "send_code",
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "source" }
+        ]
+    },
+    { "keys": ["ctrl+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}
+    },
+    { "keys": ["ctrl+alt+e"], "command": "open_dir",
+        "args": {"dir": "$file_path", "file": "$file_name"} }
+]

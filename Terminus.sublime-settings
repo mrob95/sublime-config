@@ -1,0 +1,12 @@
+{
+    "shell_configs": [
+        {
+            "name": "R",
+            "cmd": ["R"],
+            "env": {},
+            "enable": true,
+            "default": false,
+            "platforms": ["windows"]
+        }
+    ]
+}

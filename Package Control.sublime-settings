@@ -40,6 +40,8 @@
 		"SendCode",
 		"SideBarEnhancements",
 		"sublack",
+		"SublimeLinter",
+		"SublimeLinter-pyflakes",
 		"SublimeREPL",
 		"Sublimerge 3",
 		"Terminal",

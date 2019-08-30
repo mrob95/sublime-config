@@ -1,0 +1,8 @@
+// SublimeLinter Settings - User
+{
+    "linters": {
+        "pyflakes": {
+            "filter_errors": ["caster.imports", "mathfly.imports"]
+        }
+    }
+}
